@@ -26,6 +26,7 @@ public class RacingCarController {
         String tryCnt = readLine();
         int tryCntToInt = gamePerformService.convertTryCnt(tryCnt);
 
+        System.out.println();
         System.out.println(ConsoleMessage.OUTPUT_EXECUTE_RESULT);
         List<RacingCarDTO> playGame = gamePerformService.playersResult(cars, tryCntToInt);
 
